@@ -3,8 +3,6 @@ import { useState, useEffect } from 'react';
 import Header from '../Header/Header.jsx'
 import './App.css';
 import axios from 'axios';
-import Card from '@mui/material/Card';
-
 
 function App() {
     const [shoppingList, setShoppingList] = useState([]);
@@ -83,10 +81,10 @@ function App() {
             <main>
                 <h2>Add an item</h2>
                 <form onSubmit={postList}>
-                    Item:<input type="text" value={item} onChange={(e) => setItem(e.target.value)}/>
-                    Quantity:<input type="number" value={quantity} onChange={(e) => setQuantity(e.target.value)}/>
-                    Unit:<input type="text" value={unit} onChange={(e) => setUnit(e.target.value)}/>
-                    <input type="submit" />
+                    Item:<TextField size="small" variant="filled" type="text" value={item} onChange={(e) => setItem(e.target.value)}/>
+                    Quantity:<TextField size="small" variant="filled" type="number" value={quantity} onChange={(e) => setQuantity(e.target.value)}/>
+                    Unit:<TextField size="small" variant="filled" type="text" value={unit} onChange={(e) => setUnit(e.target.value)}/>
+                    <Button variant="contained" type="submit">Submit</Button>
                 </form>
                 <h2>Shopping List</h2>
                 <button onClick={() => resetList()}>Reset</button>
