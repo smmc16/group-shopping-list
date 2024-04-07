@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Header from '../Header/Header.jsx'
 import './App.css';
 import axios from 'axios';
+import Card from '@mui/material/Card';
 
 function App() {
     const [shoppingList, setShoppingList] = useState([]);
