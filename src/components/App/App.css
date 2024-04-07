@@ -1,0 +1,29 @@
+main {
+  width: 90%;
+  margin: auto;
+}
+
+.listItem {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 25%;
+  text-align: center;
+  margin: 10px;
+}
+
+#listSection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buybtn {
+  background-color: lightblue;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.removebtn {
+  background-color: red;
+  margin: 5px;
+  border-radius: 5px;
+}
