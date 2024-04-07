@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import Header from '../Header/Header.jsx'
 import './App.css';
 import axios from 'axios';
+import Card from '@mui/material/Card';
+
 
 function App() {
     const [shoppingList, setShoppingList] = useState([]);
@@ -92,7 +94,7 @@ function App() {
                 <div id="listSection">
                 {
                     shoppingList.map((item) => {
-                        return <div className='listItem' key={item.id}>
+                        return <Card variant="outlined" className='listItem' key={item.id}>
                             <h3>{item.name}</h3>
                             <p>{item.quantity} {item.unit}</p>
                             { item.purchased ? 
@@ -102,7 +104,7 @@ function App() {
                             <button className="removebtn" onClick={() => removeItem(item.id)}>Remove</button>
                             </div>
                             }
-                        </div>
+                        </Card>
                     })
                 }
                 </div>
