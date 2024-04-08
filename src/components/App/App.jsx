@@ -10,6 +10,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import Typography from '@mui/material/Typography';
+import Card from '@mui/material/Card';
 
 
 function App() {
@@ -100,7 +101,7 @@ function App() {
                 <div id="listSection">
                 {
                     shoppingList.map((item) => {
-                        return <div className='listItem' key={item.id}>
+                        return <Card variant="outlined" className='listItem' key={item.id}>
                             <h3>{item.name}</h3>
                             <p>{item.quantity} {item.unit}</p>
                             { item.purchased ? 
@@ -110,7 +111,7 @@ function App() {
                             <button className="removebtn" onClick={() => removeItem(item.id)}>Remove</button>
                             </div>
                             }
-                        </div>
+                        </Card>
                     })
                 }
                 </div>
