@@ -7,7 +7,6 @@ import Card from '@mui/material/Card';
 import  TextField  from '@mui/material/TextField';
 import Button  from '@mui/material/Button';
 
-
 function App() {
     const [shoppingList, setShoppingList] = useState([]);
 
@@ -102,8 +101,8 @@ function App() {
                             { item.purchased ? 
                             <p>Purchased</p>:
                             <div>
-                            <button className="buybtn" onClick={() => markPurchased(item.id)}>Buy</button>
-                            <button className="removebtn" onClick={() => removeItem(item.id)}>Remove</button>
+                            <Button variant="contained" color="success" size="small" className="buybtn" onClick={() => markPurchased(item.id)}>Buy</Button>
+                            <Button variant="outlined" color="error" size="small" className="removebtn" onClick={() => removeItem(item.id)}>Remove</Button>
                             </div>
                             }
                         </Card>

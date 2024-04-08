@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const PORT = process.env.PORT || 5002;
+const PORT = process.env.PORT || 5001;
 const shoppinglistRouter = require('./routes/shoppinglist.router');
 
 /** ---------- MIDDLEWARE ---------- **/
