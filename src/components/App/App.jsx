@@ -4,9 +4,7 @@ import Header from '../Header/Header.jsx'
 import './App.css';
 import axios from 'axios';
 <<<<<<<<< Temporary merge branch 1
-import Card from '@mui/material/Card';
-import  TextField  from '@mui/material/TextField';
-import Button  from '@mui/material/Button';
+
 =========
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
