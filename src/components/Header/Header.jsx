@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import Typography from '@mui/material/Typography';
 
 function Header() {
     return (
