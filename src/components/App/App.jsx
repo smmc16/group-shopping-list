@@ -3,10 +3,11 @@ import { useState, useEffect } from 'react';
 import Header from '../Header/Header.jsx'
 import './App.css';
 import axios from 'axios';
+<<<<<<<<< Temporary merge branch 1
 import Card from '@mui/material/Card';
 import  TextField  from '@mui/material/TextField';
 import Button  from '@mui/material/Button';
-
+=========
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import '@fontsource/roboto/300.css';
@@ -14,6 +15,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import Typography from '@mui/material/Typography';
+>>>>>>>>> Temporary merge branch 2
 
 
 function App() {
